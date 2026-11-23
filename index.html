@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Влад Фролов — Motion Designer | Product Design · AI · VFX · CG</title>
+  <meta name="description" content="Портфолио motion-дизайнера: продуктовый дизайн, интерактивные интерфейсы, применение AI, VFX и CG в коммерческих проектах.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__logo"><span class="nav__logo-badge">В</span><span class="nav__logo-text">Фролов<span class="nav__logo-dot">.</span></span></a>
+    <nav class="nav__links">
+      <a href="#showreel">Showreel</a>
+      <a href="#stack">Инструменты</a>
+      <a href="#work">Работы</a>
+      <a href="#services">Услуги</a>
+      <a href="#about">Обо мне</a>
+      <a href="#contact" class="nav__cta">Связаться</a>
+    </nav>
+    <button class="nav__burger" id="burger" aria-label="Меню">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero__inner">
+      <p class="hero__tag reveal">Motion Design · Product · AI · VFX · CG</p>
+      <h1 class="hero__title">
+        <span class="line"><span>Дизайн —</span></span>
+        <span class="line"><span>это <em class="grad">язык продукта</em></span></span>
+      </h1>
+      <p class="hero__sub reveal">
+        Я Влад Фролов — motion-дизайнер. Создаю продуктовые анимации,
+        интерактивные интерфейсы и VFX, где AI и CG работают не как спецэффект,
+        а как часть дизайна.
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#work" class="btn btn--primary">Смотреть работы</a>
+        <a href="#contact" class="btn btn--ghost">Обсудить проект</a>
+      </div>
+      <div class="hero__metrics reveal">
+        <div class="metric"><b>12+</b><span>лет в motion</span></div>
+        <div class="metric"><b>120+</b><span>продуктовых проектов</span></div>
+        <div class="metric"><b>8</b><span>компаний</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SHOWREEL ===== -->
+  <section class="section section--reel" id="showreel">
+    <div class="container">
+      <h2 class="section__title reveal">Showreel</h2>
+      <div class="reel reveal">
+        <video class="reel__video" src="video/Showreel_main.mp4" muted loop autoplay playsinline preload="metadata"></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STACK ===== -->
+  <section class="section section--stack" id="stack">
+    <div class="container">
+      <p class="section__kicker reveal">Инструменты</p>
+      <h2 class="section__title reveal">С чем работаю</h2>
+
+      <div class="stack-grid">
+        <div class="stack-col reveal">
+          <ul>
+            <li>
+              <img src="image/After Effects.png" alt="After Effects" width="28" height="28" loading="lazy">
+              <span>After Effects</span>
+            </li>
+            <li>
+              <img src="image/Premiere.png" alt="Premiere Pro" width="28" height="28" loading="lazy">
+              <span>Premiere Pro</span>
+            </li>
+            <li>
+              <img src="image/cinema_4d.png" alt="Cinema 4D" width="28" height="28" loading="lazy">
+              <span>Cinema 4D</span>
+            </li>
+          </ul>
+        </div>
+        <div class="stack-col reveal">
+          <ul>
+            <li>
+              <img src="image/photoshop.png" alt="Photoshop" width="28" height="28" loading="lazy">
+              <span>Photoshop</span>
+            </li>
+            <li>
+              <img src="image/Illustrator.png" alt="Illustrator" width="28" height="28" loading="lazy">
+              <span>Illustrator</span>
+            </li>
+            <li>
+              <img src="image/figma.png" alt="Figma" class="icon-sm" width="28" height="28" loading="lazy">
+              <span>Figma</span>
+            </li>
+          </ul>
+        </div>
+        <div class="stack-col reveal">
+          <ul>
+            <li>
+              <img src="image/comfyui.webp" alt="ComfyUI" width="28" height="28" loading="lazy">
+              <span>ComfyUI</span>
+            </li>
+            <li>
+              <img src="image/higgsfield.svg" alt="Higgsfield" width="28" height="28" loading="lazy">
+              <span>Higgsfield</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK ===== -->
+  <section class="section" id="work">
+    <div class="container">
+      <p class="section__kicker reveal">Избранное</p>
+      <h2 class="section__title reveal">Работы</h2>
+      <p class="section__lead reveal">
+        Продуктовый дизайн в центре — с анимацией как основным средством,
+        а AI, VFX и CG как инструментами производства.
+      </p>
+
+      <div class="work-grid">
+        <!-- Card 1 -->
+        <article class="work-card work-card--wide reveal" data-cat="product">
+          <div class="work-card__media work-card__media--video">
+            <video class="work-card__video" src="video/Business%20card.mp4" muted loop autoplay playsinline preload="metadata"></video>
+          </div>
+          <div class="work-card__body">
+            <h3>Motion Designer</h3>
+            <p>Моя анимационная визитка, выполненная полностью в After effects.
+            Без использования искусственного интеллекта.
+            Саунд дизайн сделан в Premiere.</p>
+            <ul class="tags"><li>After Effects</li><li>Premiere</li><li>Particles</li><li>Sound Design</li></ul>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="work-card work-card--wide work-card--flip reveal" data-cat="cg">
+          <div class="work-card__media work-card__media--video">
+            <video class="work-card__video" src="video/%D0%A8%D0%B0%D0%BF%D0%BA%D0%B0_%D0%BB%D0%B5%D1%82%D0%BE.mp4" muted loop autoplay playsinline preload="metadata"></video>
+          </div>
+          <div class="work-card__body">
+            <h3>CG</h3>
+            <p>Начальная заставка для канала «Ювелир Трейд».
+            CG визуализация выполнена в Cinema 4D.
+            Рендер Redshift. Композитинг, After effects.</p>
+            <ul class="tags"><li>C4D</li><li>Redshift</li><li>After Effects</li><li>Sound Design</li></ul>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="work-card work-card--wide reveal" data-cat="vfx">
+          <div class="work-card__media work-card__media--video">
+            <video class="work-card__video" src="video/Kill%20Mickey.mp4" muted loop autoplay playsinline preload="metadata"></video>
+          </div>
+          <div class="work-card__body">
+            <h3>VFX</h3>
+            <p>Сцена снята с живым актером на зеленом фоне.
+            Герой помещен в полностью созданное 3D окружение.
+            Использованы техники Keying, tracking, particles, color grading.</p>
+            <ul class="tags"><li>After Effects</li><li>Cinema 4D</li><li>VFX</li><li>Compositing</li><li>Sound Design</li></ul>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="work-card work-card--wide work-card--flip reveal" data-cat="product">
+          <div class="work-card__media work-card__media--video">
+            <video class="work-card__video" src="video/%D0%9E%D1%82%D0%BB%D0%B8%D1%87%D0%BD%D1%8B%D0%B9%20%D0%B4%D0%B5%D1%82%D0%B5%D0%BA%D1%82%D0%B8%D0%B2.mp4" muted loop autoplay playsinline preload="metadata"></video>
+          </div>
+          <div class="work-card__body">
+            <h3>Broadcast designer</h3>
+            <p>Начальная заставка для телевизионного сериала.
+            Отснятые актеры помещены в 3D окружение.</p>
+            <ul class="tags"><li>After Effects</li><li>Cinema 4D</li><li>Compositing</li><li>Sound Design</li></ul>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="work-card work-card--wide reveal" data-cat="ai">
+          <div class="work-card__media work-card__media--video">
+            <video class="work-card__video" src="video/AI.mp4" muted loop autoplay playsinline preload="metadata"></video>
+          </div>
+          <div class="work-card__body">
+            <h3>AI-визуал</h3>
+            <p>AI-ролик: генеративные сцены + пост-продакшн — композитинг,
+            цветокор и финальная сборка в After Effects.</p>
+            <ul class="tags"><li>ComfyUI</li><li>After Effects</li><li>Compositing</li><li>AI</li><li>Sound Design</li></ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section section--alt" id="services">
+    <div class="container">
+      <p class="section__kicker reveal">Чем могу быть полезен</p>
+      <h2 class="section__title reveal">Услуги</h2>
+
+      <div class="services">
+        <div class="service reveal">
+          <span class="service__num">01</span>
+          <h3>Продуктовый motion-дизайн</h3>
+          <p>Анимации для приложений и сайтов: onboarding, микро-взаимодействия,
+          продуктовые ролики и «живые» landing-страницы. Работаю с продуктовыми
+          командами и дизайнерами UI/UX.</p>
+        </div>
+        <div class="service reveal">
+          <span class="service__num">02</span>
+          <h3>AI-ассистированный продакшн</h3>
+          <p>Строю пайплайны, где нейросети берут рутину — ассеты, раскадровки,
+          генерация кадров — а финальная полировка остаётся за человеком.
+          Быстрее, дешевле, с контролем качества.</p>
+        </div>
+        <div class="service reveal">
+          <span class="service__num">03</span>
+          <h3>VFX и CG</h3>
+          <p>Продуктовая визуализация, частицы, свет, симуляции.
+          Компьютерная графика как часть брендинга, а не отчёт из рендер-фермы.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section section--alt" id="about">
+    <div class="container container--narrow">
+      <p class="section__kicker reveal">Обо мне</p>
+      <h2 class="section__title reveal">Дизайн решает</h2>
+      <div class="about reveal">
+        <p>
+          Я начинал как 3D-дизайнер, но пришёл к главному выводу:
+          <b>анимация — это не украшение, а способ донести смысл продукта</b>.
+          Сегодня я соединяю продуктовое мышление с продакшном уровня кино.
+        </p>
+        <p>
+          В работе активно использую AI — не для замены, а как инструмент:
+          генерация раскадровок, ассетов и черновых кадров. Это ускоряет
+          итерации в разы, а финальную полировку делаю руками: VFX-композитинг,
+          CG-симуляции, точная синхронизация с продуктом.
+        </p>
+        <p>
+          Верю, что хороший motion-дизайн незаметен — пользователь просто
+          чувствует, что продукт живой.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container container--narrow">
+      <p class="section__kicker reveal">Контакты</p>
+      <h2 class="section__title section__title--big reveal">
+        Давайте сделаем что-то <em class="grad">живое</em>
+      </h2>
+      <p class="section__lead reveal">
+        Открыт к долгосрочным и разовым проектам.
+        Напишите — отвечу в течение 24 часов.
+      </p>
+      <div class="contact__actions reveal">
+        <a class="contact__mail" href="mailto:vladfrolov72@mail.ru">vladfrolov72@mail.ru</a>
+        <a class="btn btn--ghost btn--lg" href="tel:+79152194330">+7 (915) 219-43-30</a>
+      </div>
+      <div class="socials reveal">
+        <a class="btn btn--primary btn--lg" href="https://t.me/VladislavFrolov72" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 Влад Фролов — Motion Designer</span>
+      <span>Signed off with motion</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
